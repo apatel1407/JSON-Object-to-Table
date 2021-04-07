@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial sans-serif;
+}
+
+body {
+    width: 60vw;
+    margin: 0 auto;
+    border: 4px double black;
+}
+
+header, div{
+    width: 80%;
+    min-height: 100px;
+    margin: 0 auto;
+} 
+
+#inline-elements{
+    background-color: #f6d8ac;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 10px 0 10px;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+
+header > form {
+    display: inline-block;
+    padding: 10px;
+    font-size: large;
+}
+
+input[type=text]{
+    width: 70%;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+input[type=text]:focus{
+    background-color:whitesmoke;
+    color: black;
+}
+
+#filter-search-button{
+    background-color: lightblue;
+    border: 2px solid black;
+    border-radius: 12px;
+    font-size: 20px;
+}
+
+#filter-search-button:hover{
+    background-color: greenyellow;
+    color: black;
+}
+
+td{
+    text-align: center;
+    background-color: peachpuff;
+    color: black;
+}
+
+table, td, th{
+    border: 1px groove black;
+}
+
+table{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+td:hover{
+    background-color: green;
+    color: lightsalmon;
+}
+
+th{
+    background-color: lightblue;
+    color: black;
+    height: 40px;
+}
+
+/* Mobile screen view. */
+@media screen and (max-width: 840px) {
+    
+    #inline-elements{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        background-color: lightblue;
+    }
+    
+    #filter-search-button{
+        background-color: blanchedalmond;
+        border: 2px solid black;
+        border-radius: 12px;
+        font-size: 20px;
+    }
+
+    th{
+        background-color: cadetblue;
+        color: black;
+    }
+
+    /*
+      Line of Reference: Line 115 and 116
+      Author or Website: www.w3schools.com
+      Description: Overflow property of the table tag learned using w3Schools. It is the property which helps to make a responsive table that is, if the web-page is resolved to smaller size than the table automatically provides a horizontal and vertical scroll bar wherever needed.
+      Date learned: 08 December 2020
+      URL: https://www.w3schools.com/css/css_table.asp
+    */
+    #data-in-table-form{
+        overflow-x: auto;
+        overflow-y: auto;
+    }
+}

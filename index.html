@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assignment-5</title>
+        <!--
+           This links to normalize.css file.
+           Content generated from necolas.github.io
+           Author: Nicolas Gallagher
+           Date accessed: 02 November 2020
+           Line of Reference: Line 15
+           URL: https://necolas.github.io/normalize.css/8.0.1/normalize.css
+        -->
+        <link href="css/normalize.css" rel="stylesheet" type="text/css">
+        <!--
+            This links to main.css file.
+        -->
+        <link href="css/main.css" rel="stylesheet" type="text/css">
+    </head>
+    
+    <body>    
+        <!--
+            Tag= Header container tag.
+            Description= It containes the following tags:
+                       1. A form tag
+                       2. In the form tag, two paragraph elements.
+                       3. First paragraph stores the label for the form and an input box which allows users to input desired values.
+                       4. Second paragraph stores the search button which allows users to search the entered word from table displayed in division.
+        -->
+        <header id="pgMainHeader">
+        <form method="GET" id="inline-elements">
+            <p>
+                <label for="cityName"> City Name: </label>
+                <input type="text" id="cityName" name="city" placeholder="Enter the City Name!!">
+            </p>
+            <p>
+                <button type="button" value="Search" id="filter-search-button"> Filter Results </button>
+            </p>
+        </form>
+        </header>
+
+        <!--
+           Tag: Section with class "json-string-container"
+           Description: The section contains the division which prints the table from JSON data.
+        -->
+        <section class="json-string-container">
+            <div id="data-in-table-form"> </div>
+        </section>
+
+        <!--
+            Link to data-weather.js file
+            Author:  Dr. Raghav V. Sampangi (raghav@cs.dal.ca)
+            Date Accessed: 07 December 2020
+            Line of Reference: 59
+            URL's: 1. City names generated using: https://www.fantasynamegenerators.com/city-names.php
+                   2. Weather info from: https://weather.fandom.com/wiki/Types_of_Weather
+        --> 
+        <script src="js/data-weather.js"></script>
+        <!-- Link to scripts.js file. -->
+        <script src="js/scripts.js"></script>
+    </body>  
+</html>
